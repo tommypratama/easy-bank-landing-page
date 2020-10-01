@@ -1,0 +1,29 @@
+{
+  "name": "parcel-tailwindcss",
+  "version": "1.0.0",
+  "description": "A Minimal Tailwindcss boilerplate with parcel",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "tailwindcss",
+    "parcel",
+    "boilerplate",
+    "postcss"
+  ],
+  "author": "Tommy Pratama",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve src/**/*.html --no-cache --no-source-maps --no-autoinstall",
+    "build": "NODE_ENV=production parcel build src/**/*.html --no-cache --no-source-maps --no-autoinstall --public-url './'",
+    "build:github": "parcel build src/**/*.html --public-url https://tommypratama.github.io/start-parcel-tailwindcss/"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "^2.1.2"
+  }
+}
